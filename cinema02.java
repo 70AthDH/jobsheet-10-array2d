@@ -26,9 +26,8 @@ public class cinema02 {
         for (String[] rowAudience : audience) {
             System.out.println("Row length: " + rowAudience.length);
         }
-        System.out.println("Audience in row 3: ");
-        for (String name : audience[2]) { // modify
-            System.out.println(name);
+        for (int i = 0; i < audience.length; i++) { // modify
+            System.out.println("Audience in row " + (i + 1) + ": " + String.join(", ",audience[i]));
         }
 
     }
