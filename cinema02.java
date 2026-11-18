@@ -22,6 +22,14 @@ public class cinema02 {
             System.out.println("Length of row " + (i + 1) + ": " +
             audience[i].length);
         }
+        // added
+        for (String[] rowAudience : audience) {
+            System.out.println("Row length: " + rowAudience.length);
+        }
+        System.out.println("Audience in row 3: ");
+        for (int i = 0; i < audience[2].length; i++) {
+            System.out.println(audience[2][i]);
+        }
 
     }
 }
